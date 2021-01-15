@@ -8,7 +8,7 @@ class DropDownMenu extends Component {
                 <div className="homePageDropDownList">
                     <button className="dropButton">All Applications</button>
                     <div className="dropDown-Content">
-                        <a href>monkey</a>
+                        
                         <a href>monkey</a>
                         <a href>monkey</a>
                     </div>
