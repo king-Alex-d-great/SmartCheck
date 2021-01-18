@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Navbar from "./navBar";
-import MainSection from "./mainSection";
+import Navbar from "../components/navBar";
+import MainSection from "../components/mainSection";
 
 class ApplicationPage extends Component {
   state = {};
