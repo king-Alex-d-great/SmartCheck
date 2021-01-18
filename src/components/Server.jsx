@@ -1,26 +1,17 @@
 import React, { Component } from 'react';
 import Navbar from "./navBar";
-import Main from "./main";
+import MainSection from './mainSection';
 
 class Server extends Component {
     state = {  }
     render() { 
         return (
-            <div>
-                <Navbar />
-                <div className="biggerRectangle"> 
-                  <smallrectangle
-                     serialNumber=""
-                     serversMapped=""
-                     status=""
-                     action=""
-
-
-                  />
-
-
-                </div>
-            </div>
+            <React.Fragment>
+        <Navbar />
+        <main>
+          <MainSection />
+        </main>
+      </React.Fragment>
           );
     }
 }

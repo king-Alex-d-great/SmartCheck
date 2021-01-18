@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import HomePage from "./HomePage";
+import CreateServer from "./createServer";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <HomePage />
+        <CreateServer />
       </React.Fragment>
     );
   }

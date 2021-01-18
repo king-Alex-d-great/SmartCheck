@@ -1,6 +1,5 @@
 import React from "react";
-
-let showdate = () => new Date().toDateString();
+import TableRows from "./tableRows";
 
 let headers = [
   "S/N",
@@ -24,54 +23,39 @@ let showHeader = () => {
 const Table = (props) => {
   return (
     <table className="table">
-      
-      <thead className="thead-light">{showHeader()}
-      <th>something</th></thead>
+      <thead className="thead-light">{showHeader()}</thead>
       <tbody>
-        <tr className="rectangleRowsContent">
-          <td>{props.serialNumber}</td>
-          <td> Application name Goes here</td>
-          <td>{props.serverMapped}</td>
-          <td>{showdate()}</td>
-          <td>{props.status}</td>
-          <td>{props.action}</td>
-        </tr>
+        <TableRows
+          serialNumber="hgh"
+          serverMapped="hbff"
+          status="hfefe"
+          action="gvfge"
+        />
+        <TableRows
+          serialNumber="hgh"
+          serverMapped="hbff"
+          status="hfefe"
+          action="gvfge"
+        />
+        <TableRows
+          serialNumber="hgh"
+          serverMapped="hbff"
+          status="hfefe"
+          action="gvfge"
+        />
 
-        <tr className="rectangleRowsContent">
-          <td>{props.serialNumber}</td>
-          <td> Application name Goes here</td>
-          <td>{props.serverMapped}</td>
-          <td>{showdate()}</td>
-          <td>{props.status}</td>
-          <td>{props.action}</td>
-        </tr>
-
-        <tr className="rectangleRowsContent">
-          <td>{props.serialNumber}</td>
-          <td> Application name Goes here</td>
-          <td>{props.serverMapped}</td>
-          <td>{showdate()}</td>
-          <td>{props.status}</td>
-          <td>{props.action}</td>
-        </tr>
-
-        <tr className="rectangleRowsContent">
-          <td>{props.serialNumber}</td>
-          <td> Application name Goes here</td>
-          <td>{props.serverMapped}</td>
-          <td>{showdate()}</td>
-          <td>{props.status}</td>
-          <td>{props.action}</td>
-        </tr>
-
-        <tr className="rectangleRowsContent">
-          <td>{props.serialNumber}</td>
-          <td> Application name Goes here</td>
-          <td>{props.serverMapped}</td>
-          <td>{showdate()}</td>
-          <td>{props.status}</td>
-          <td>{props.action}</td>
-        </tr>
+        <TableRows
+          serialNumber="hgh"
+          serverMapped="hbff"
+          status="hfefe"
+          action="gvfge"
+        />
+        <TableRows
+          serialNumber="hgh"
+          serverMapped="hbff"
+          status="hfefe"
+          action="gvfge"
+        />
       </tbody>
     </table>
   );

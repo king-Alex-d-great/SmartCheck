@@ -1,21 +1,34 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class DropDownMenu extends Component {
-    state = {  }
-    render() { 
-        return ( 
-            <section>
-                <div className="homePageDropDownList">
-                    <button className="dropButton">All Applications</button>
-                    <div className="dropDown-Content">
-                        
-                        <a href>monkey</a>
-                        <a href>monkey</a>
-                    </div>
-                </div>
-            </section>
-         );
-    }
+  state = {
+    className: "dropdown-content",
+  };
+
+  showDropdown = (e) => {
+    const className =
+      this.state.className === "dropdown-content"
+        ? "dropdown-content show"
+        : "dropdown-content";
+    this.setState({
+      className: className,
+    });
+  };
+
+  render() {
+    return (
+      <div class="dropdown">
+        <button onclick={(e) => this.showDropdown(e)} className="dropbtn">
+          Dropdown
+        </button>
+        <div id="myDropdown" className={this.state.className}>
+          <a href>Link 1</a>
+          <a href>Link 2</a>
+          <a href>Link 3</a>
+        </div>
+      </div>
+    );
+  }
 }
- 
+
 export default DropDownMenu;
