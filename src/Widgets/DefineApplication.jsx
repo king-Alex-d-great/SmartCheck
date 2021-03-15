@@ -18,9 +18,10 @@ class DefineApplication extends Component {
             <ModalTextField />
             <ModalTextField />
             <Checkboxes />
+           
           </form>
-        </section>
-        <div>
+         </section>     
+            <div>
           <button style={{ marginRight: "10px" }}>Cancel</button>
           <button>Create</button>
         </div>

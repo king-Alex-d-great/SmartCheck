@@ -4,8 +4,10 @@ import ModalTextField from "../components/modalTextFields";
 class CreateServer extends Component {
   state = {};
   render() {
+
     return (
-      <main className="serverSection">
+      <section className="serverModalContainer">
+         <main className="serverSection" id="createServerModal">
         <header>
           <h1>Create a Server</h1>
         </header>
@@ -23,6 +25,8 @@ class CreateServer extends Component {
           <button>Create</button>
         </div>
       </main>
+      </section>
+     
     );
   }
 }
