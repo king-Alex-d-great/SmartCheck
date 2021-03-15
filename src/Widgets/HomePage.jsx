@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../components/navBar";
 import MainSection from '../components/mainSection';
 import SmallTopRectangle from "../components/smallTopRectangles";
+import "../index.css";
 
 class HomePage extends Component {
   
@@ -10,13 +11,8 @@ class HomePage extends Component {
       <React.Fragment>
         <Navbar />
         <main>
-          <section id="smallrectangle">
-            <div class="row">
              <SmallTopRectangle />
-             <SmallTopRectangle />
-             <SmallTopRectangle />
-            </div>
-          </section>
+
 <MainSection />
         </main>
       </React.Fragment>

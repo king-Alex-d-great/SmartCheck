@@ -1,18 +1,21 @@
 import React from "react";
 import TableRows from "./tableRows";
+import {FaCheckCircle} from "react-icons/fa";
+import triangle from "../assets/triangle.svg";
+
 
 let headers = [
   "S/N",
-  "Application",
-  "Servers",
-  "Last seen",
-  "Status",
-  "Action",
+  "APPLICATION",
+  "SERVERS",
+  "LAST SEEN",
+  "STATUS",
+  "ACTION",
 ];
 
 let showHeader = () => {
   return (
-    <tr>
+    <tr className="tableHeader">
       {headers.map((header) => (
         <th key="header">{header}</th>
       ))}
@@ -26,35 +29,37 @@ const Table = (props) => {
       <thead className="thead-light">{showHeader()}</thead>
       <tbody>
         <TableRows
-          serialNumber="hgh"
-          serverMapped="hbff"
-          status="hfefe"
-          action="gvfge"
+          serialNumber="1"
+          serverMapped="3 servers"
+          status=  {<FaCheckCircle id="status" />} 
+          text="Healthy"
+    
         />
         <TableRows
-          serialNumber="hgh"
-          serverMapped="hbff"
-          status="hfefe"
-          action="gvfge"
+          serialNumber="2"
+          serverMapped="2 servers"
+          status= {<img src={triangle} alt="triangle icons" />}
+         
         />
         <TableRows
-          serialNumber="hgh"
-          serverMapped="hbff"
-          status="hfefe"
-          action="gvfge"
+          serialNumber="3"
+          serverMapped="2 servers"
+          status=  {<FaCheckCircle id="status" />} 
+          
         />
 
         <TableRows
-          serialNumber="hgh"
-          serverMapped="hbff"
-          status="hfefe"
-          action="gvfge"
+          serialNumber="4"
+          serverMapped="3 servers"
+           status=  {<FaCheckCircle id="status" />} 
+          
         />
         <TableRows
-          serialNumber="hgh"
-          serverMapped="hbff"
-          status="hfefe"
-          action="gvfge"
+          serialNumber="5"
+          serverMapped="3 servers"
+           status=  {<FaCheckCircle id="status" />} 
+          color="red"
+          
         />
       </tbody>
     </table>
