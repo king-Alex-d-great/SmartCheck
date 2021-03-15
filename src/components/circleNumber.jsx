@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 
 class CircleNumber extends Component {
-    state = {  }
+    state = {
+        
+      }
+      
     render() { 
-        return (  <div>
-                      <span className="circleNumber">10</span> <p>all</p>
-                    </div> );
+        return (  
+        <div>
+                      <span className="circleNumber">10</span>
+                       <p>all</p>
+                    </div>
+                     );
     }
 }
  
